@@ -9,18 +9,18 @@ source:
   sha256: 1cb760abf186a97beb5acdfd47dc2f98829070f679a838869162cd7c0b447e0d
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
-  noarch: python
+  skip: True  # [py<35]
 
 requirements:
   host:
-    - python >=3.5
+    - python
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.5
+    - python
     - setuptools
     - sqlalchemy
     - typing >=3.6  # py<37
