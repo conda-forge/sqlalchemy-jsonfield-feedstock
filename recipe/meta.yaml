@@ -10,17 +10,17 @@ source:
 
 build:
   number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<35]
+  script: {{ PYTHON }} -m pip install . -vv
+  noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python
+    - python >=3.6
     - setuptools
     - sqlalchemy
 
