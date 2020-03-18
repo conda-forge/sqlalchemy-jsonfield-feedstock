@@ -23,7 +23,6 @@ requirements:
     - python
     - setuptools
     - sqlalchemy
-    - typing >=3.6  # [py<37]
 
 test:
   imports:
