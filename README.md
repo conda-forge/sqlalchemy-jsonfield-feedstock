@@ -5,11 +5,15 @@ Home: https://github.com/penguinolog/sqlalchemy_jsonfield
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sqlalchemy-jsonfield-feedstock/blob/master/LICENSE.txt)
 
 Summary: SQLALchemy JSONField implementation for storing dicts at SQL independently
 from JSON type support.
 
+
+Development: https://github.com/penguinolog/sqlalchemy_jsonfield
+
+Documentation: https://github.com/penguinolog/sqlalchemy_jsonfield
 
 SqlAlchemy provides JSON field support for several database types
 (PostgreSQL and MySQL for now) and semi-working dict <-> JSON <-> VARCHAR
