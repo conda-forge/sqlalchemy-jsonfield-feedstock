@@ -15,14 +15,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.5
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.6
-    - setuptools
+    - python >=3.5
     - sqlalchemy
+    - typing >=3.6
 
 test:
   imports:
