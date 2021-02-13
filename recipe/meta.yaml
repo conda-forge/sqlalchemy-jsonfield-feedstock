@@ -7,11 +7,14 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 766d0b25bdebf53f67ccfaf9975987f921965987b37bae3a95ba6e7855afe98b
+  patches:
+    - 0001-remove-typing.patch
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
+
 
 requirements:
   host:
@@ -26,6 +29,10 @@ requirements:
 test:
   imports:
     - sqlalchemy_jsonfield
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/penguinolog/sqlalchemy_jsonfield
