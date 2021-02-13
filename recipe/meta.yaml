@@ -9,7 +9,7 @@ source:
   sha256: 766d0b25bdebf53f67ccfaf9975987f921965987b37bae3a95ba6e7855afe98b
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -22,7 +22,6 @@ requirements:
   run:
     - python >=3.5
     - sqlalchemy
-    - typing >=3.6
 
 test:
   imports:
