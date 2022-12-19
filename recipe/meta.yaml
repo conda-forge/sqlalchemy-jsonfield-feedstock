@@ -1,29 +1,31 @@
-{% set name = "SQLAlchemy-JSONField" %}
+{% set name = "sqlalchemy-jsonfield" %}
 {% set version = "1.0.1.post0" %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-JSONField-{{ version }}.tar.gz
   sha256: 72a5e714fe0493d2660abd7484a9fd9f492f493a0856288dd22a5decb29f5dc4
   patches:
     - 0001-remove-typing.patch
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.5
+    - python >=3.7
     - sqlalchemy
 
 test:
@@ -36,6 +38,7 @@ test:
 
 about:
   home: https://github.com/penguinolog/sqlalchemy_jsonfield
+  summary: SQLALchemy JSONField implementation for storing dicts at SQL
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
