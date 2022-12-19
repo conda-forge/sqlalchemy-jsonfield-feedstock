@@ -9,8 +9,6 @@ source:
 
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/SQLAlchemy-JSONField-{{ version }}.tar.gz
   sha256: 72a5e714fe0493d2660abd7484a9fd9f492f493a0856288dd22a5decb29f5dc4
-  patches:
-    - 0001-remove-typing.patch
 
 build:
   noarch: python

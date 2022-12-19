@@ -1,6 +1,0 @@
-diff -ur SQLAlchemy-JSONField-1.0.0/requirements.txt SQLAlchemy-JSONField-1.0.0-patched/requirements.txt
---- requirements.txt	2020-12-11 16:54:09.000000000 +0100
-+++ requirements.txt	2021-02-13 20:44:43.043212174 +0100
-@@ -1,2 +1 @@
- sqlalchemy
--typing >= 3.6 ; python_version < "3.7"
