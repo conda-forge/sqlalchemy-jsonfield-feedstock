@@ -24,7 +24,6 @@ As addition, we have different levels of Unicode support on database and
 connector side, so we may be interested to switch JSON encoding between d
 eployments.
 
-
 Current build status
 ====================
 
